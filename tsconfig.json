@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "baseUrl": "./",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "module": "commonjs",
+    "outDir": "dist/",
+    "sourceMap": true,
+    "target": "es6"
+  },
+  "include": [
+    "./src/**/*.ts"
+  ],
+  "exclude": ["**/*.spec.ts"]
+}

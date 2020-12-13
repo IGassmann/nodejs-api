@@ -1,0 +1,14 @@
+# Node dependencies
+node_modules/
+
+# Log files
+*.log*
+
+# Compiled sources
+dist/
+
+# Environment variables
+.env
+
+# Code coverage output
+**/coverage/
