@@ -62,7 +62,7 @@ export default class ChannelsController {
     await this.commandBus.execute<UpdateChannelBrandingCommand>(updateChannelBrandingCommand);
   }
 
-  @Post('/:id/publishment')
+  @Put('/:id/publishment')
   @HttpCode(HttpStatus.OK)
   async publish(@Param('id', ParseObjectIdPipe) channelId: ObjectId): Promise<void> {
     await this.commandBus.execute<PublishChannelCommand>(new PublishChannelCommand(channelId));
